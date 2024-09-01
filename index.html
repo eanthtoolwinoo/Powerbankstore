@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Power Bank Store</title>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: skyblue;
+      margin: 0;
+      padding: 0;
+    }
+
+    span {
+      background: gray;
+      color: skyblue;
+      font-size: 100px;
+      padding-right: 15px;
+      border: 2px solid skyblue;
+    }
+
+    .title {
+      background: black;
+      color: skyblue;
+      min-height: 150px;
+      text-align: center;
+      font-size: 70px;
+      padding: 20px 0px 0px 20px;
+      text-shadow: 5px 5px 5px;
+
+    }
+
+    .logo {
+      margin: 10px 0px;
+    }
+
+    .menu {
+      float: left;
+      background: skyblue;
+      height: 30px;
+      text-align: center;
+      padding-top: 2px;
+      padding-bottom: 4px;
+      width: 75%;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: 30px;
+      margin-left: 40px;
+
+    }
+
+    a:hover {
+      background: gray;
+      color: aqua;
+
+    }
+
+    .search {
+      float: right;
+      width: 25%;
+    }
+
+    .search input {
+      color: gray;
+      font-size: 16px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .search input:hover {
+      background-color: black;
+    }
+
+    .search button {
+      color: skyblue;
+      font-size: 19px;
+      padding: 8px 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .search button:hover {
+      background-color: black;
+    }
+
+    .slide {
+      margin-bottom: 0px;
+    }
+
+    .pimg {
+      width: 100%;
+      height: 700px;
+    }
+
+    .home {
+      background: skyblue;
+      height: 350px;
+      font-size: 30px;
+    }
+
+    .home h2 {
+      color: black;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .home p {
+      color: black;
+      text-indent: 50px;
+      line-height: 55px;
+      padding-left: 20px;
+    }
+
+    .container {
+      background: black;
+    }
+
+    .row:after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .col {
+      width: 25%;
+      float: left;
+      color: white;
+      line-height: 35px;
+    }
+
+    .use {
+      background: white;
+      padding: 30px;
+    }
+
+    .col1 {
+      width: 50%;
+      float: left;
+    }
+
+    .col1 h2 {
+      padding-bottom: 10px;
+    }
+
+    .col1 img {
+      padding-left: 40px;
+    }
+
+    #c {
+      padding-top: 80px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 35px;
+    }
+
+    .about {
+      background-color: black;
+      color: wheat;
+    }
+
+    .about h1 {
+      padding: 50px 0px 0px 0px;
+      text-align: center;
+      font-size: 50px;
+    }
+
+    .about p {
+      padding: 50px 200px;
+      font-size: 25px;
+      line-height: 50px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .contact {
+      background-color: skyblue;
+      margin: 0px;
+    }
+
+    .col2 {
+      width: 50%;
+      float: left;
+      padding-top: 15px;
+    }
+
+    .col2 img {
+      width: 100%;
+      height: 450px;
+    }
+
+    .col2 h2 {
+      padding-top: 20px;
+      font-size: 50px;
+    }
+
+    .col2 h2,
+    p {
+      padding-left: 80px;
+    }
+
+    .col2 p {
+      color: black;
+      padding-top: 20px;
+      font-size: 20px;
+    }
+
+    .col3 {
+      float: left;
+      padding-top: 50px;
+    }
+
+    .text {
+      margin-left: 250px;
+      padding: 15px 120px 15px 20px;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .email {
+      margin-left: 20px;
+      padding: 15px 120px 15px 20px;
+      font-size: 20px;
+
+    }
+
+    .phone {
+      margin-left: 250px;
+      padding: 15px 528px 15px 20px;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .comment {
+      margin-left: 250px;
+      padding: 15px 430px 15px 20px;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .send {
+      background-color: black;
+      color: white;
+      margin-left: 250px;
+      padding: 5px 35px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .address {
+      padding: 50px 10px;
+      font-size: 25px;
+      line-height: 30px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    footer {
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .footercontent {
+      width: 100%;
+      padding: 70px 30px 20px;
+    }
+
+    .socialmedia {
+      display: flex;
+      justify-content: center;
+    }
+
+    .socialmedia a {
+      text-decoration: none;
+      padding: 10px;
+      background-color: white;
+      margin: 10px;
+      border-radius: 50%;
+    }
+
+    .socialmedia a i {
+      font-size: 1.5em;
+      color: black;
+      opacity: 0.9;
+    }
+
+    .socialmedia a:hover {
+      background-color: black;
+      transition: 0.5s;
+    }
+
+    .socialmedia a:hover i {
+      color: white;
+      transition: 0.5s;
+    }
+
+    .footernav {
+      margin: 30px 0;
+    }
+
+    .footernav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    .footernav ul li a {
+      background-color: black;
+      color: white;
+      margin: 20px;
+      font-size: 1.3em;
+      opacity: 0.7;
+      transition: 0.5s;
+    }
+
+    .footernav ul li a:hover {
+      opacity: 1;
+    }
+
+    .footerbottom {
+      text-align: center;
+    }
+
+    .footerbottom p {
+      color: white;
+      padding-left: 10px;
+    }
+
+    @media screen and (max-width:750px) {
+      * {
+        box-sizing: border-box;
+
+      }
+
+      body {
+        background-color: skyblue;
+        width: 80%;
+      }
+
+      .title {
+        width: 125%;
+        font-size: 40px;
+      }
+
+      .logo {
+        float: none;
+      }
+
+      .menu {
+        display: flex;
+        width: 125%;
+        float: none;
+      }
+
+      .menu a {
+        font-size: 25px;
+        margin-left: auto;
+      }
+
+      .search {
+        width: 100%;
+      }
+
+      .search input {
+        margin: 20px 0px 20px 80px;
+      }
+
+      .pimg {
+        width: 125%;
+        height: 400px;
+      }
+
+      .home {
+        font-size: 20px;
+        height: 600px;
+      }
+
+      .home h2 {
+        width: 125%;
+        font-size: 28px;
+      }
+
+      .home p {
+        width: 120%;
+        padding-left: 30px;
+      }
+
+      .product {
+        width: 125%;
+        box-sizing: border-box;
+      }
+
+      .col {
+        float: none;
+        width: 50%;
+        margin-left: 15%;
+      }
+
+      .col h3 {
+        width: 80%;
+      }
+
+      .use {
+        width: 125%;
+      }
+
+      .col1 {
+        float: none;
+        width: 100%;
+      }
+
+      .col1 img {
+        width: 100%;
+        padding-top: 50px;
+      }
+
+      .col1 h2 {
+        width: 100%;
+      }
+
+      .col1 p {
+        width: 90%;
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 25px;
+      }
+
+      .about {
+        width: 125%;
+      }
+
+      .about p {
+        width: 100%;
+        padding: 60px;
+      }
+
+      .contact {
+        width: 125%;
+      }
+
+      .col2 {
+        float: none;
+      }
+
+      .col2 img {
+        height: 300px;
+        width: 180%;
+        padding-left: 60px;
+      }
+
+      .col2 h2 {
+        width: 170%;
+        text-align: center;
+      }
+
+      .col2 p {
+        width: 200%;
+        font-size: 20px;
+        padding-left: 20px;
+      }
+
+      .col3 {
+        float: none;
+      }
+
+      .text,
+      .email {
+        float: none;
+        width: 80%;
+        margin-left: 10%;
+      }
+
+      .text {
+        margin-bottom: 0px;
+      }
+
+      .email {
+        margin-bottom: 50px;
+      }
+
+      .phone,
+      .comment,
+      .send {
+        width: 80%;
+        margin-left: 10%;
+        padding-right: 140px;
+        margin-bottom: 50px;
+      }
+
+      .send {
+        width: 35%;
+        padding-right: 40px;
+      }
+
+      .address {
+        width: 100%;
+      }
+
+      .address p {
+        padding-left: 10px;
+      }
+
+      footer {
+        width: 125%;
+      }
+
+      .socialmedia {
+        width: 100%;
+      }
+
+      .footernav ul {
+        flex-direction: column;
+      }
+
+      .footernav ul li {
+        width: 80%;
+        text-align: center;
+        margin: 10px;
+      }
+
+      .footerbottom {
+        width: 100%;
+      }
+
+      .footerbottom p {
+        padding-left: 50px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="title"><span>P</span>Power Bank Store</div>
+  </header>
+  <div class="logo">
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#use">Use</a>
+      <a href="#aboutus">About Us</a>
+      <a href="#contactus">Contact Us</a>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Go</button>
+    </div>
+  </div>
+  <div class="slide">
+    <img src="power1.jpg" alt="" class="pimg">
+  </div>
+  <div class="home" id="home">
+    <h2>Welcome To Our Power Bank Store</h2>
+    <p>A Power Bank is a portable charger designed to recharge your electronic devices when you're on the move.
+      Ranging in size from slim, pocket-sized devices up to larger, higher-capacity Power Banks can be used
+      to charge smartphones, tablets, earphones, smartwatches and other mobile devices.We have a variety of power
+      banks,whatever you want,you can find them here.Your reliable source for
+      high-capacity power banks designed.Below are the popular powerbanks.</p>
+  </div>
+
+  <div class="product" id="products">
+    <div class="container">
+      <h1 style="color: white; text-align: center; font-size: 50px; margin-bottom: 20px;">
+        Products</h1>
+      <div class="row">
+        <div class="col">
+          <img src="pmg.jpg" alt="">
+          <h3>Nitecore NB10000 Gen 2 Quick-Charge USB/USB-C Dual Port 10000mAh Power Bank</h3>
+          <ul>
+            <li>Battery Type: Carbon Fiber Powerbank
+            </li>
+            <li>Capacity: 10000mAh
+            </li>
+            <li>USB-C input / USB-A and USB-C output
+            </li>
+          </ul>
+          <h4>Price: $59.95</h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+        </div>
+        <div class="col">
+          <img src="pmg1.jpg" alt="">
+          <h3>Nitecore NPB1 5000mAh Waterproof Power Bank
+          </h3>
+          <ul>
+            <li>Battery Type: 21700 Li-ion (Built-in)
+            </li>
+            <li>Capacity: 5000mAh
+            </li>
+            <li>Micro USB input / USB-A Output
+            </li>
+          </ul>
+          <h4>Price: $34.95
+          </h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-half"
+            viewBox="0 0 16 16">
+            <path
+              d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+          </svg>
+        </div>
+        <div class="col">
+          <img src="pmg2.jpg" alt="">
+          <h3>Nitecore NB20000 QC USB & USB-C 4 Port 20000mAh Power Bank</h3>
+          <ul>
+            <li>Power Level Display
+            </li>
+            <li>Carbon Fiber
+            </li>
+            <li>20,000mAh Premium Li-ion Battery
+            </li>
+          </ul>
+          <h4>Price: $99.95
+          </h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+        </div>
+        <div class="col">
+          <img src="pmg3.jpg" alt="">
+          <h3>Nitecore Carbo 20000 Lightweight QC 20000mAh Power Bank</h3>
+          <ul>
+            <li>Battery Type: Carbon Fiber Powerbank
+            </li>
+            <li>Capacity: 20000mAh
+            </li>
+            <li>USB-C input / USB-A and USB-C output
+            </li>
+          </ul>
+          <h4>Price: $119.95
+          </h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-half"
+            viewBox="0 0 16 16">
+            <path
+              d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+          </svg>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="pmg4.jpg" alt="">
+          <h3>NITECORE Summit 10000 10,000mAh Power Bank for Low Temperatures</h3>
+          <ul>
+            <li>Battery Type: Carbon Fiber Powerbank
+            </li>
+            <li>Capacity: 10000mAh
+            </li>
+            <li>USB-C input / USB-A and USB-C output
+            </li>
+          </ul>
+          <h4>Price: $119.95
+          </h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+        </div>
+        <div class="col">
+          <img src="pmg5.jpg" alt="">
+          <h3>Nitecore Carbo 10000 Lightweight QC 10000mAh Power Bank</h3>
+          <ul>
+            <li>Battery Type: Carbon Fiber Powerbank
+            </li>
+            <li>Capacity: 10000mAh
+            </li>
+            <li>USB-C input / USB-A and USB-C output
+            </li>
+          </ul>
+          <h4>Price: $89.95
+          </h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+          </svg>
+        </div>
+        <div class="col">
+          <img src="pmg6.jpg" alt="">
+          <h3>NITECORE Summit 20000 Power Bank, 20,000mAh for Low Temperature</h3>
+          <ul>
+            <li>Battery Type: Carbon Fiber Power Bank
+            </li>
+            <li>Capacity: 20000mAh
+            </li>
+            <li>USB-C input / USB-A and USB-C output
+            </li>
+          </ul>
+          <h4>Price: $149.95
+          </h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+        </div>
+        <div class="col">
+          <img src="pmg7.jpg" alt="">
+          <h3>Nitecore NW5000 Magnetic Wireless Charging and USB-C 5000mAh Power Bank</h3>
+          <ul>
+            <li>Battery Type: Carbon Fiber Powerbank
+            </li>
+            <li>Capacity: 5000mAh
+            </li>
+            <li>Wireless Magnetic Charging / USB-C Input and Output
+            </li>
+          </ul>
+          <h4>Price: $69.95
+          </h4>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" class="bi bi-star"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="use" id="use">
+    <h1 style="text-align: center; font-size: 70px; margin-bottom: 50px;">Use</h1>
+    <div class="row">
+      <div class="col1">
+        <img src="pimg.jpg" alt="">
+      </div>
+      <div class="col1" id="c">
+        <h2>Everyday/Convenience Use</h2>
+        <p>A portable and lightweight power bank that can easily slip into a bag or pocket is ideal for Daily
+          commutes, workdays, or school days.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col1" id="c">
+        <h2>Professional/Work Use</h2>
+        <p>The power bank with medium to high capacity, fast charging capabilities, compatibility with
+          professional devices, and possibly multiple charging ports are suitable for business travel and
+          meetings.</p>
+      </div>
+      <div class="col1">
+        <img src="pimg2.jpg" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col1">
+        <img src="pimg3.jpg" alt="">
+      </div>
+      <div class="col1" id="c">
+        <h2>On-the-Go/Portable Use</h2>
+        <p>A high-capacity power bank with fast-charging capabilities is ideal for Traveling, commuting, outdoor
+          activities (hiking, camping), and so on.</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="about" id="aboutus">
+    <h1>About Us</h1>
+    <p>POWER BANK STORE is a thriving company that specializes in producing a wide range of power banks, dedicated
+      to
+      simplifying your life. <br><br>
+      Our primary focus is on designing, manufacturing, and promoting top-notch products at an affordable price
+      point. We pride ourselves on delivering friendly and prompt customer service, ensuring that consumers
+      worldwide have access to the ultimate charging experience. With our reliable products, you can travel with
+      peace of mind, knowing that your devices will always stay powered up.</p>
+  </div>
+  <hr>
+  <div class="contact" id="contactus">
+    <div class="row">
+      <div class="col2">
+        <img src="pcontact.jpg" alt="">
+      </div>
+      <div class="col2">
+        <h2>Contact Us</h2>
+        <p>Welcome to Powerbankstore! We're here to assist you with any inquiries or support you may need.
+          Please
+          feel
+          free to reach out to us via any of the following methods.</p>
+        <p>Email: Contact Us at powerbankstore@gmail.com</p>
+        <p>Wholesale: wholesale@ipoweradd.com</p>
+        <p>Live Chat: Chat live with one of our representatives during business hours. Look for the chat icon in
+          the bottom right corner of your screen.</p>
+        <p>Form: You can also send us a message by submitting the form below.</p>
+      </div>
+    </div>
+    <div class="row">
+      <form action="">
+        <div class="col3">
+          <input type="text" placeholder="Name" class="text">
+        </div>
+        <div class="col3">
+          <input type="email" placeholder="Email *" class="email">
+        </div>
+      </form>
+    </div>
+    <div class="form">
+      <form action="">
+        <input type="Phone umber" placeholder="Phone number" class="phone">
+        <br>
+        <textarea name="" id="" cols="30" rows="3" placeholder="Comment" class="comment"></textarea>
+        <br>
+        <button class="send">Send</button>
+      </form>
+    </div>
+    <div class="address">
+      <p><b>Customer Service Hours:</b>Mon - Fri: 9:00AM - 6:00PM PST</p>
+      <br>
+      <p><b>Address:</b>13855 Ramona Ave, Chino California 91710, United States</p>
+      <br>
+      <p>We're here to Help! At Powerbankstore, customer satisfaction is our top priority. Whether you have
+        questions about
+        our products, need assistance with an order, or simply want to provide feedback, our dedicated team is
+        here
+        to help. Don't hesitate to reach out - we look forward to hearing from you!</p>
+      <br>
+      <p>Company name：MAYLERESCAPE LIMITED</p>
+      <br>
+      <p>Company Address: UNIT# 2052 275 NEW NORTH ROAD LONDON UNITED KINGDOM N1 7AA</p>
+    </div>
+  </div>
+  <Footer>
+    <div class="footercontent">
+      <div class="socialmedia">
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            viewBox="0 0 16 16"">
+            <path
+              d=" M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75
+            7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157
+            1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934
+            6.75-7.951" />
+          </svg></a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-instagram" viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+          </svg></a <a href=""><i class="twitter"></i></a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-twitter" viewBox="0 0 16 16">
+            <path
+              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+          </svg></a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-google" viewBox="0 0 16 16">
+            <path
+              d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+          </svg></a>
+        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-youtube" viewBox="0 0 16 16">
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+          </svg></a>
+      </div>
+      <div class="footernav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#use">Use</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footerbottom">
+        <p>CopyRight &copy; 2024 Powerbank.All rights reserved.</p>
+      </div>
+    </div>
+  </Footer>
+</body>
+
+</html>

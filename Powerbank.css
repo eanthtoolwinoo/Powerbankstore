@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:skyblue;
+    margin: 0;
+    padding: 0;
+}
+span{
+    background: gray;
+    color: skyblue;
+    font-size: 100px;
+    padding-right:15px;
+    border: 2px solid skyblue;
+}
+
+.title{
+    background: black;
+    color: skyblue;
+    min-height: 150px;
+    text-align: center;
+    font-size: 70px;
+    padding: 20px 0px 0px 20px;
+    text-shadow: 5px 5px 5px;
+
+} 
+.logo{
+    margin: 10px 0px;
+}
+.menu {
+    float: left;
+    background: skyblue;
+    height: 30px;
+    text-align: center;
+    padding-top:2px ;
+    padding-bottom: 4px;
+    width: 75%;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 40px;
+
+}
+a:hover{
+    background: gray;
+    color: aqua;
+    
+}
+.search{
+    float: right;
+    width: 25%;
+}
+.search input{
+    color: gray;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.search input:hover{
+    background-color: black;
+}
+.search button{
+    color: skyblue;
+    font-size: 19px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search button:hover{
+    background-color: black;
+}
+
+.slide{
+    margin-bottom: 0px;
+}
+.pimg{
+   width: 100%;
+   height: 700px;
+}
+.home{
+    background: skyblue;
+    height: 350px;
+    font-size: 30px;
+}
+.home h2{
+    color: black;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.home p{
+    color:black;
+    text-indent: 50px;
+    line-height: 55px;
+    padding-left: 20px;
+}
+.container{
+    background: black;
+}
+.row:after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.col{
+    width: 25%;
+    float: left;
+    color: white;
+    line-height: 35px;
+}
+.use{
+    background: white;
+    padding: 30px;
+}
+
+.col1{
+    width: 50%;
+    float: left;
+}
+.col1 h2{
+padding-bottom: 10px;
+}
+.col1 img{
+    padding-left: 40px;
+}
+#c{
+    padding-top: 80px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+}
+.about{
+background-color: black;
+   color: wheat;
+}
+.about h1{
+    padding: 50px 0px 0px 0px;
+    text-align: center;
+    font-size: 50px;
+}
+.about p{
+    padding:50px 200px;
+    font-size: 25px;
+    line-height: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contact{
+    background-color: skyblue;
+    margin: 0px;
+}
+.col2{
+    width: 50%;
+    float: left;
+    padding-top: 15px;
+}
+.col2 img{
+    width: 100%;
+    height: 450px;
+}
+.col2 h2{
+    padding-top: 20px;
+    font-size: 50px;
+}
+.col2 h2,p{
+    padding-left: 80px;
+}
+.col2 p{
+    color: black;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.col3{
+    float: left;
+    padding-top: 50px;
+}
+.text{
+ margin-left: 250px;
+ padding: 15px 120px 15px 20px;
+ font-size: 20px;
+ margin-bottom: 20px;
+}
+.email{
+    margin-left: 20px;
+    padding: 15px 120px 15px 20px;
+    font-size: 20px;
+
+}
+.phone{
+    margin-left: 250px;
+    padding: 15px 528px 15px 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.comment{
+    margin-left: 250px;
+    padding: 15px 430px 15px 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.send{
+    background-color: black;
+    color: white;
+    margin-left: 250px;
+    padding: 5px 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.address{
+    padding: 50px 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer{
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footercontent{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialmedia{
+    display: flex;
+    justify-content: center;
+}
+.socialmedia a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialmedia a i{
+    font-size: 1.5em;
+    color: black;
+    opacity: 0.9;
+}
+.socialmedia a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+.socialmedia a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footernav{
+    margin: 30px 0;
+}
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footernav ul li a{
+    background-color: black;
+    color: white;
+    margin: 20px;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footernav ul li a:hover{
+    opacity: 1;
+}
+.footerbottom{
+    text-align: center;
+}
+.footerbottom p{
+    color: white;
+    padding-left: 10px;
+}
+@media screen and (max-width:750px) {
+    *{
+        box-sizing: border-box;
+        
+    }
+    body{
+        background-color: skyblue;
+        width: 80%;
+    }
+    .title{
+        width: 125%;
+        font-size: 40px;
+    }
+    .logo{
+        float: none;
+    }
+    .menu{
+        display: flex;
+        width: 125%;
+        float: none;
+    }
+    .menu a{
+        font-size: 25px;
+        margin-left: auto;
+    }
+    .search{
+        width: 100%;
+    }
+    .search input{
+        margin: 20px 0px 20px 80px;
+    }
+    .pimg{
+        width: 125%;
+        height: 400px;
+    }
+    .home{
+        font-size: 20px;
+        height: 600px;
+    }
+    .home h2{
+        width: 125%;
+        font-size: 28px;
+    }
+    .home p{
+        width:120%;
+        padding-left: 30px;
+    }
+    .product{
+        width: 125%;
+        box-sizing: border-box;
+    }
+    .col{
+        float: none;
+        width: 50%;
+        margin-left: 15%;
+    }
+    .col h3{
+        width: 80%;
+    }
+    .use{
+        width: 125%;
+    }
+    .col1{
+        float: none;
+        width: 100%;
+    }
+    .col1 img{
+        width: 100%;
+        padding-top: 50px;
+    }
+    .col1 h2{
+        width: 100%;
+    }
+    .col1 p{
+        width: 90%;
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size:25px;
+    }
+    .about{
+        width: 125%;
+    }
+    .about p{
+       width: 100%;
+      padding: 60px;
+    }
+    .contact{
+        width: 125%;
+    }
+    .col2{
+        float: none;
+    }
+    .col2 img{
+        height: 300px;
+        width: 180%;
+        padding-left: 60px;
+    }
+    .col2 h2{
+        width: 170%;
+        text-align: center;
+    }
+    .col2 p{
+        width: 200%;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .col3{
+        float: none;
+    }
+    .text,.email{
+        float: none;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .text{
+        margin-bottom: 0px;
+    }
+    .email{
+        margin-bottom: 50px;
+    }
+    .phone,.comment,.send{
+        width: 80%;
+        margin-left: 10%;
+       padding-right: 140px;
+       margin-bottom: 50px;
+    }
+    .send{
+        width: 35%;
+        padding-right: 40px;
+    }
+    .address{
+        width: 100%;
+    }
+    .address p{
+        padding-left: 10px;
+    }
+    footer{
+        width: 125%;
+    }
+    .socialmedia{
+        width: 100%;
+    }
+    .footernav ul{
+        flex-direction: column;
+    }
+    .footernav ul li{
+        width: 80%;
+        text-align: center;
+        margin: 10px;
+    }
+    .footerbottom{
+        width: 100%;
+    }
+    .footerbottom p{
+        padding-left: 50px;
+    }
+}
